@@ -25,6 +25,12 @@ Controllers folder
 ./app/controllers/static_pages_controller.rb
 ```
 
+Helpers for title
+
+```
+./app/helpers/application_helper.rb
+```
+
 Views folder
 
 ```
