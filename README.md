@@ -13,7 +13,7 @@ is available jointly under the MIT License and the Beerware License. See
 
 ## Dependencies for main files
 
-Routes file
+Routes
 
 ```
 ./config/routes.rb
@@ -22,37 +22,33 @@ Routes file
 Controllers folder
 
 ```
-./app/controllers/static_pages_controller.rb
+./app/controllers/
 ```
 
-Helpers for title
+Helpers folder
 
 ```
-./app/helpers/application_helper.rb
+./app/helpers/
 ```
 
 Views folder
 
 ```
-./app/views/static_pages/home.html.erb
-./app/views/static_pages/help.html.erb
-./app/views/static_pages/about.html.erb
-./app/views/static_pages/contact.html.erb
+./app/views/
 ```
 
-Test for controllers folder
+Tests folder
 
 ```
-./test/controllers/static_pages_controller_test.rb
+./test/
 ```
 
 ## Deployment in Heroku
 
-- [Home-root location](https://rails-sample-app-suh.herokuapp.com/)  
-- [Home-original location](https://rails-sample-app-suh.herokuapp.com/static_pages/home)  
+- [Home-root location](https://rails-sample-app-suh.herokuapp.com/)
 - [Help page](https://rails-sample-app-suh.herokuapp.com/static_pages/help)
 - [About page](https://rails-sample-app-suh.herokuapp.com/static_pages/about)
-- [Contact page](https://rails-sample-app-suh.herokuapp.com/static_pages/contact)
+- [Contact page](https://rails-sample-app-suh.herokuapp.com/static_pages/contact) 
 
 ## Getting started
 
