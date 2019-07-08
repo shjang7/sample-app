@@ -45,10 +45,11 @@ Tests folder
 
 ## Deployment in Heroku
 
-- [Home-root location](https://rails-sample-app-suh.herokuapp.com/)
-- [Help page](https://rails-sample-app-suh.herokuapp.com/static_pages/help)
-- [About page](https://rails-sample-app-suh.herokuapp.com/static_pages/about)
-- [Contact page](https://rails-sample-app-suh.herokuapp.com/static_pages/contact) 
+- [Home location](https://rails-sample-app-suh.herokuapp.com/)
+- [Help page](https://rails-sample-app-suh.herokuapp.com/help)
+- [About page](https://rails-sample-app-suh.herokuapp.com/about)
+- [Contact page](https://rails-sample-app-suh.herokuapp.com/contact)
+- [Signup page](https://rails-sample-app-suh.herokuapp.com/signup)
 
 ## Getting started
 
