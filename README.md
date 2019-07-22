@@ -5,6 +5,12 @@ This is the sample application for
 Learn Web Development with Rails*](https://www.railstutorial.org/)
 by [Michael Hartl](http://www.michaelhartl.com/).
 
+## Main Features
+- user create : Sign up
+- session create / delete : Log in / Log out
+  * session or cookie allows remaining login status
+- user delete : Admin account delete other users
+
 ## License
 
 All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
@@ -13,43 +19,17 @@ is available jointly under the MIT License and the Beerware License. See
 
 ## Dependencies for main files
 
-Routes
-
 ```
-./config/routes.rb
-```
-
-Controllers folder
-
-```
-./app/controllers/
-```
-
-Helpers folder
-
-```
-./app/helpers/
-```
-
-Views folder
-
-```
-./app/views/
-```
-
-Tests folder
-
-```
-./test/
+Routes       : ./config/routes.rb
+Controllers  : ./app/controllers/
+Views        : ./app/views/
+Models       : ./app/models/
+Tests        : ./test/
 ```
 
 ## Deployment in Heroku
 
-- [Home location](https://rails-sample-app-suh.herokuapp.com/)
-- [Help page](https://rails-sample-app-suh.herokuapp.com/help)
-- [About page](https://rails-sample-app-suh.herokuapp.com/about)
-- [Contact page](https://rails-sample-app-suh.herokuapp.com/contact)
-- [Signup page](https://rails-sample-app-suh.herokuapp.com/signup)
+- https://rails-sample-app-suh.herokuapp.com/
 
 ## Getting started
 
