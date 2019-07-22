@@ -3,7 +3,14 @@ class UsersController < ApplicationController
   before_action :correct_user,    only: [:edit, :update]
 
   def index
-    @users = User.all
+    # @users = User.all
+    # @users = User.page(params[:page])
+    # @users = User.page(params[:page]).order('created_at DESC')
+
+    # Perform a paginated query:
+    # @users = User.paginate(page: params[:page])
+    # or, use an explicit 'per page' limit:
+    @users = User.paginate(:page => params[:page], :per_page => 30)
   end
 
   def show
