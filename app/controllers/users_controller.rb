@@ -11,11 +11,13 @@ class UsersController < ApplicationController
     # Perform a paginated query:
     # @users = User.paginate(page: params[:page])
     # or, use an explicit 'per page' limit:
-    @users = User.paginate(:page => params[:page], :per_page => 30)
+    @users = User.where(activated: true).paginate(page: params[:page])
+    # @users = User.paginate(:page => params[:page], :per_page => 30)
   end
 
   def show
     @user = User.find(params[:id])
+    redirect_to root_url and return unless @user.activated?
   end
 
   def new
@@ -25,13 +27,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(users_params)
     if @user.save
-      UserMailer.account_activation(@user).deliver_now
+      @user.send_activation_email
       flash[:info] = 'Please check your email to activate your account.'
-      # debugger
       redirect_to root_url
-      # log_in @user
-      # flash[:success] = "Welcome to the Sample App!"
-      # redirect_to @user
     else
       render 'new'
     end
