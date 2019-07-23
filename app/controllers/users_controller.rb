@@ -11,8 +11,8 @@ class UsersController < ApplicationController
     # Perform a paginated query:
     # @users = User.paginate(page: params[:page])
     # or, use an explicit 'per page' limit:
-    @users = User.where(activated: true).paginate(page: params[:page])
     # @users = User.paginate(:page => params[:page], :per_page => 30)
+    @users = User.where(activated: true).paginate(page: params[:page])
   end
 
   def show
