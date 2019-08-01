@@ -1,14 +1,15 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class UsersLoginTest < ActionDispatch::IntegrationTest
-
   def setup
     @user = users(:michael)
   end
 
   test 'login with valid information' do
     get login_path
-    post login_path, params: { session: { email:    @user.email,
+    post login_path, params: { session: { email: @user.email,
                                           password: 'password' } }
     assert_redirected_to @user
     follow_redirect!
@@ -30,7 +31,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
 
   test 'login with valid information followed by logout' do
     get login_path
-    post login_path, params: { session: { email:    @user.email,
+    post login_path, params: { session: { email: @user.email,
                                           password: 'password' } }
     assert is_logged_in?
     assert_redirected_to @user
