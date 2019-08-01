@@ -11,19 +11,22 @@ by [Michael Hartl](http://www.michaelhartl.com/).
 - Rails 5.2.3
 - Postgresql 10.9
 - Sendgrid v3
+- S3 from AWS
 
 
 ## Main Features
 
 - Sign up (Create user)
 - Log in / Log out (Authentication)
-  * session keeps login status during web site opening
-  * cookies keeps login status for remembering next time open web browser
+  * Session keeps login status during web site opening
+  * Cookies keeps login status for remembering next time open web browser
 - Delete user
-  * admin account user can delete any other user
+  * Admin account user can delete any other user
 - Email confirm
   * After sign up, user can click the activation link what has been sent through the email
   * When user forget password, they can reset password through sending email confirmation
+- Post upload
+  * User write posts optionally including a image
 
 
 ## Deployment in Heroku
@@ -45,13 +48,20 @@ Next, migrate the database:
 $ rails db:migrate
 ```
 
+Then, load data from seed into the database:
+
+```
+$ rails db:seed
+```
+
 Finally, run the test suite to verify that everything is working correctly:
 
 ```
 $ rails test
 ```
 
-If the test suite passes, you'll be ready to run the app in a local server:
+If the test suite passes, you'll be ready to run the app in a local server: <br />
+: You can login with sample user[email: example@railstutorial.org, password: foobar]
 
 ```
 $ rails server
