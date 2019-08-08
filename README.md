@@ -17,16 +17,24 @@ by [Michael Hartl](http://www.michaelhartl.com/).
 ## Main Features
 
 - Sign up (Create user)
+
 - Log in / Log out (Authentication)
   * Session keeps login status during web site opening
   * Cookies keeps login status for remembering next time open web browser
+
 - Delete user
   * Admin account user can delete any other user
+
 - Email confirm
   * After sign up, user can click the activation link what has been sent through the email
   * When user forget password, they can reset password through sending email confirmation
+
 - Post upload
   * User write posts optionally including a image
+  
+- Following / Followers
+  * User can see a list of the following or the followers
+  * User can see posts from oneself of the followed users
 
 
 ## Deployment in Heroku
