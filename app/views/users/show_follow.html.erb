@@ -22,9 +22,9 @@
     <h3><%= @title %></h3>
     <% if @users.any? %>
       <ul class="users follow">
-        <%= render @users %>
+        <%= render @users_page %>
       </ul>
-      <%= will_paginate %>
+      <%= will_paginate @users_page %>
     <% end %>
   </div>
 </div>

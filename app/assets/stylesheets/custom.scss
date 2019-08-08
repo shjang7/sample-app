@@ -145,10 +145,9 @@ aside {
 .gravatar {
   float: left;
   margin-left: 10px;
-}
-
-.gravatar_edit {
-  margin-top: 15px;
+  &_edit {
+    margin-top: 15px;
+  }
 }
 
 .stats {
@@ -183,10 +182,6 @@ aside {
   a {
     padding: 0;
   }
-}
-
-.users.follow {
-  padding: 0;
 }
 
 /* forms */
